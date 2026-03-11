@@ -1,3 +1,25 @@
-.DS_Store
+# Jupyter
+.ipynb_checkpoints/
+
+# Python cache
 __pycache__/
 *.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Data and models
+data/
+datasets/
+*.h5
+*.pt
+*.ckpt
+*.sav
+
+# Logs
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
