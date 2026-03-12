@@ -1,16 +1,13 @@
-# yolo-object-detection-project
+To create our dataset, we collected open-licensed images from several sources, including Pexels, Pixabay, and Google Image Search, as well as a small number of photographs taken by members of the group. The dataset contains three object classes: phone, blue bottle, and red cup. When selecting images, we aimed to maintain a reasonably balanced distribution between the classes in order to avoid bias during training.
 
-## Dataset collection
+The images were annotated using Roboflow, where bounding boxes were manually drawn around each object. The annotation work was divided among the group members to speed up the process. After labeling, the dataset was split into training, validation, and test sets using a 70/20/10 ratio.
 
-Downloaded open-licensed images from pexels.com, pixabay.com and google-search and some pictures taken by the group.
-Tried to keep a balanced ratio between classes, phone, blue bottle, red cup.
-Used roboflow to annotate, which we divided between the group.
-Splitted the dataset in train, test and validation. 70, 10, 20
+Model Training
 
-Tried training a model on roboflow for a first test-iteration
-When we had a working model we downloaded the dataset and trained our models locally.
+As an initial step, we trained a preliminary model directly in Roboflow to verify that the dataset and annotations were working correctly. Once we confirmed that the model could detect the objects, we exported the dataset and continued training our models locally using the YOLO framework.
 
+Evaluation and Observations
 
+The trained model was able to detect the three object classes with reasonable accuracy under normal conditions. However, performance varied depending on factors such as lighting, object orientation, and background complexity. In simpler scenes where the objects were clearly visible, the detector performed reliably. In more complex situations, such as cluttered backgrounds or partially occluded objects, detection accuracy decreased.
 
-
-Document your group’s work by describing how you collected your dataset, showing example labeled images, reporting training results, and reflecting on how well your detector performs in real scenarios.
+Overall, the project demonstrates how dataset quality, annotation accuracy, and class balance influence the performance of an object detection model. Further improvements could likely be achieved by increasing the dataset size, improving class balance, and applying additional data augmentation techniques.
