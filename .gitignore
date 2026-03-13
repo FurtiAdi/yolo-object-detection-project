@@ -13,7 +13,7 @@ env/
 data/
 datasets/
 *.h5
-*.pt
+# *.pt
 *.ckpt
 *.sav
 
