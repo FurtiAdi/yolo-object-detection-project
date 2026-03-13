@@ -13,7 +13,7 @@ env/
 data/
 datasets/
 *.h5
-# *.pt
+*.pt
 *.ckpt
 *.sav
 
@@ -23,3 +23,6 @@ logs/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Exception
+!models/best.pt
